@@ -1,65 +1,73 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React, { useEffect} from "react";
+import Layout from "../components/Layout";
+import CompanyBannerArea from "../sections/CompanyBannerArea";
+import SaasFeaturesAreaThree from "../sections/SaasFeaturesAreaThree";
+import DesignTabArea from "../sections/DesignTabArea";
+import CallActionArea from "../sections/CallActionArea";
+import FeaturesArea from "../sections/FeaturesArea";
 
 export default function Home() {
+  useEffect(() => {
+      // if (typeof window !== 'undefined') {
+      //     console.info('window is defined');
+      //     window.WOW = require('wow.js');
+      // }
+  }, []);
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <>
+      <Layout page={"Page d'accueil"} preloader={false}>
+        {/** home-company.html **/}
+        <CompanyBannerArea
+            image={{
+              source: '/img/new/company.jpg',
+              alt: 'Notre cabinet'
+            }}
+            bannerContent={{
+              title: `Cabinet de psychomotricité de Salomé THOMAS`,
+              subtitle: 'Bienvenue au'
+            }}
+        />
+        <SaasFeaturesAreaThree
+            areaContent={{
+              title: "Un centre pluridisciplinaire",
+              content: "Bienvenue dans le cabinet paramédical de Jules Julien aux portes de Toulouse."
+            }}
+            features={[]}
+        />
+        {/** tab.html **/}
+        {/*<DesignTabArea*/}
+        {/*    areaContent={{*/}
+        {/*      title: "Your design process, in one place",*/}
+        {/*      content: "WShow off show off pick your nose and blow off Elizabeth"*/}
+        {/*    }}*/}
+        {/*    tab={{*/}
+        {/*        tabs: [*/}
+        {/*            {id: 1, name: 'one', title: 'Title 1', content: "Content 1"},*/}
+        {/*            {id: 2, name: 'two', title: 'Title 2', content: "Content 2"},*/}
+        {/*            {id: 3, name: 'three', title: 'Title 3', content: "Content 3"}*/}
+        {/*        ],*/}
+        {/*        tabContents: [*/}
+        {/*            {id: 1, name: 'one', image: "/img/home3/tab.png"},*/}
+        {/*            {id: 2, name: 'two', image: "/img/home3/tab.png"},*/}
+        {/*            {id: 3, name: 'three', image: "/img/home3/tab.png"},*/}
+        {/*        ]*/}
+        {/*    }}*/}
+        {/*/>*/}
+        {/** home-mail.html **/}
+        <CallActionArea
+            areaContent={{
+              title: "",
+              content: ""
+            }}
+            bgImage={{
+                source: "/img/home2/app_bg.png",
+                alt: ""
+            }}
+            button={{ href: "", label: ""}}
+        />
+        <FeaturesArea/>
+      </Layout>
+    </>
   )
 }
