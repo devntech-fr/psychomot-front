@@ -8,7 +8,7 @@ is the file you need to edit to change the look of the
 template.
 ---------------------------------------------------- */
 /*=====================================================================
-@Template Name: 
+@Template Name:
 @Author: Md. Shahadat Hussain
 @Developed By: Rony
 @Developer URL: https://themeforest.net/user/droitthemes
@@ -12675,7 +12675,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .saasland_container .saasland_col_content {
   position: relative;
-  width: 40%;
+  width: 50%;
 }
 
 .saasland_container .saasland_col_content .container_wrap {
@@ -12692,7 +12692,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .saasland_container .saasland_col_content .saasland_log {
-  left: 21%;
+  left: 12%;
   position: absolute;
   width: 70%;
   top: 100px;
@@ -12701,9 +12701,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .saasland_container .saasland_col_content .saasland_content {
   display: block;
   position: absolute;
-  left: 21%;
+  left: 15%;
   top: calc(50% - 150px);
-  width: 70%;
+  width: 75%;
 }
 
 .saasland_container .saasland_col_content .saasland_content h2 {
@@ -12730,7 +12730,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .saasland_container .saasland_col_content .saasland_bottom {
   bottom: 25px;
-  left: 21%;
+  left: 15%;
   position: absolute;
   width: 70%;
   font: 400 12px/40px "Poppins", sans-serif;
@@ -12745,7 +12745,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   background-image: -moz-linear-gradient(-120deg, #5e2ced 0%, #a485fd 100%);
   background-image: -webkit-linear-gradient(-120deg, #5e2ced 0%, #a485fd 100%);
   background-image: -ms-linear-gradient(-120deg, #5e2ced 0%, #a485fd 100%);
-  width: 60%;
+  width: 50%;
   position: relative;
   z-index: 1;
 }
@@ -12776,7 +12776,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 5px;
   padding: 20px 30px;
-  margin: 0px 8px;
+  min-width: 125px;
+  min-height: 125px;
+  margin: 0px 4px;
 }
 
 .saasland_col_screen .clock .timer span {
