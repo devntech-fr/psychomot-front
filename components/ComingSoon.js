@@ -6,8 +6,6 @@ import { getServerUrl } from "utils/server-info";
 function ComingSoon({ comingSoon }) {
     const { title, subtitle, deadline, image } = comingSoon;
     useEffect(() => {
-        // var thisDay = new Date();
-        // var deadline2 = new Date(Date.parse(thisDay) + 102 * 36 * 60 * 40 * 400);
         ClockUtils.initializeClock('clockdiv',deadline);
     }, []);
     return (

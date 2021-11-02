@@ -288,7 +288,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-    } 
+    }
     a{
         font: 400 14px/26px $pop;
         color: #222d39;
@@ -423,7 +423,7 @@
     .develor_tab{
         display: inline-block;
         border-bottom: 2px solid #e1e3ed;
-        padding: 0px 40px 0px 10px; 
+        padding: 0px 40px 0px 10px;
         .nav-item{
             margin: 0px 0px 0px 50px;
             float: left;
@@ -497,14 +497,14 @@
         .nav-item{
             .nav-link{
                 &:before{
-                    background: #5e2ced; 
+                    background: #5e2ced;
                 }
                 &.active{
                     color: #5e2ced;
                 }
             }
         }
-    } 
+    }
 }
 .tab_img_info{
     position: relative;
@@ -519,7 +519,7 @@
         &.active{
             position: relative;
             opacity: 1;
-            
+
         }
     }
 }
@@ -605,7 +605,7 @@
 
 /*============== service_details_area css ==============*/
 .service_details_area{
-    
+
 }
 .service_details_img{
     margin-left: -80px;
@@ -641,7 +641,7 @@
 
 /*============= saas_service_area css =============*/
 .saas_service_area{
-    
+
 }
 .saas_service_item{
     .saas_service_content{
@@ -746,9 +746,9 @@
     }
 }
 
-/*============= stratup_service_area css =============*/
-.stratup_service_area{}
-.stratup_service_img{
+/*============= startup_service_area css =============*/
+.startup_service_area{}
+.startup_service_img{
     position: relative;
     padding-top: 20px;
     z-index: 1;
@@ -758,7 +758,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        background: url(../img/new/new_shape.png) no-repeat scroll left 0;
+        background: url('../img/new/new_shape.png') no-repeat scroll left 0;
         z-index: -1;
         background-size: contain;
     }
@@ -768,7 +768,7 @@
         bottom: 0;
     }
 }
-.stratup_service_info{
+.startup_service_info{
     margin-left: -15px;
     .startup_service_item{
         position: relative;
@@ -812,7 +812,7 @@
         }
     }
 }
-/*============= stratup_service_area css =============*/
+/*============= startup_service_area css =============*/
 
 /*============= progress_bar_area css =============*/
 .progress_bar_area{
@@ -918,7 +918,7 @@
 
 
 .case_study_details_area{
-    
+
 }
 .study_details{
     h2{
@@ -941,7 +941,7 @@
     }
     ul{
         li{
-            font: 400 15px $pop; 
+            font: 400 15px $pop;
             color: #677294;
             margin-bottom: 15px;
             span{
@@ -1015,7 +1015,7 @@
 
 /*============= seo_service_area css =============*/
 .seo_service_area{
-    
+
 }
 .seo_service_info{
 }

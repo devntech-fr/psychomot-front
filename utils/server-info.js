@@ -1,6 +1,6 @@
-export const STRAPI_URL = 'http://127.0.0.1:1337';
+export const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:1337';
 
-export function getServerUrl(withSlash) {
+export function getServerUrl(withSlash = false) {
     return withSlash
         ? STRAPI_URL+'/'
         : STRAPI_URL
